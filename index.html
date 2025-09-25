@@ -14,15 +14,33 @@
       src="https://kit.fontawesome.com/d2ed36fbe3.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+   <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#063668', 
+        }
+      }
+    }
+  }
+</script>
+
+
   </head>
-  <body class="container mx-auto">
+  <body class="container mx-auto ">
     <nav class="flex flex-row justify-between mb-4 mt-5 justify-center items-center">
       <div>
         <img class="w-[60px] h-[58px]" src="assets/logo1.png" alt="" />
       </div>
       <div class="font-thin flex flex-row gap-4">
-        <p>Home</p>
-        <p>Products</p>
+        <p class="">Home</p>
+        <p class="" >Products</p>
         <p>Services</p>
         <p>Resource</p>
       </div>
@@ -33,7 +51,7 @@
           Sign In
         </button>
         <button
-          class="text-blue-900 font-semibold bg-blue-950 text-white border-2 py-1 rounded-xl px-6 border-blue-950"
+          class="text-blue-900 font-semibold bg-primary text-white border-2 py-1 rounded-xl px-6 border-blue-950"
         >
           Contact Us
         </button>
@@ -138,11 +156,15 @@
         </div>
       </section>
 
+         <div>
+        
+      </div>
+
 
 <!-- Our Products section start  -->
 <section class="mt-32">
   <div>
-    <h1 class="text-3xl font-bold text-center">Our Products</h1>
+    <h1 class="text-3xl font-bold text-center ">Our Products</h1>
     <h1 class="text-center mt-2 max-w-3xl mx-auto">
       Cutting-edge solutions designed to optimize your digital commerce presence
       and drive meaningful results.
@@ -271,7 +293,7 @@
 
    <div class="flex justify-center items-center gap-2">
     <button
-          class="text-blue-900 font-semibold bg-blue-950 my-6 flex  text-white border-2 py-2 rounded-xl px-6 border-blue-950"
+          class="text-blue-900 font-semibold bg-primary my-6 flex  text-white border-2 py-2 rounded-xl px-6 border-blue-950"
         >
           View All Products <i class="fa-solid fa-arrow-right mt-1 ml-1"></i>
         </button>
@@ -634,8 +656,56 @@
 
 
 
-    <footer>
+    <footer class="bg-[#063668] flex flex-row justify-around items-center py-10">
+       
+    <div class="flex flex-col gap-3">
+      <div class="bg-white rounded-full p-3 w-fit"><img class="w-14" src="assets/logo1.png" alt=""></div>
+      <p class="text-white">Commerce Collective Newsletter</p>
 
+      <div class="flex items-center rounded-lg overflow-hidden w-[500px] shadow-lg">
+            <input
+              type="email"
+              placeholder="Work Email"
+              class="flex-1 px-4 py-3 text-gray-700 focus:outline-none bg-white bg-opacity-10 "
+            />
+        <button
+          class="bg-blue-600 text-white font-medium px-6 py-3 hover:bg-blue-700 transition"
+        >
+          Subscribe
+        </button>
+      </div>
+
+      <p class="text-white">By signing up you agree to the terms of our Privacy <br>
+        Policy and to receive electronic communications from Flywheel.</p>
+    </div>
+    <div class="flex flex-col gap-1">
+      
+      <p class="text-white font-medium text-xl">Quick Links</p>
+
+      
+
+      <p class="text-white">Products</p>
+      <p class="text-white">Services</p>
+      <p class="text-white">Case Studies</p>
+      <p class="text-white">About Us</p>
+      <p class="text-white">Contact Us</p>
+    </div>
+
+
+     <div class="flex flex-col gap-1">
+      
+      <p class="text-white font-medium text-xl">Services</p>
+
+      
+
+      <p class="text-white">Managed Media</p>
+      <p class="text-white">Retail Media Network</p>
+      <p class="text-white">Case Studies</p>
+      <p class="text-white">About Us</p>
+      <p class="text-white">Privacy-First Intelligence</p>
+    </div>
     </footer>
+   
+    
   </body>
 </html>
